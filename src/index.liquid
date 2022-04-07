@@ -1,0 +1,23 @@
+---
+layout: layouts/base.liquid
+title: 11ty-tailwindcss-base
+description: A simple 11ty base using Tailwind 3
+---
+
+<div class="mt-4">
+    <p>A simple <a href="https://www.11ty.dev/" target="_blank" class="text-pink-700 text-sm hover:underline font-mono">11ty</a> base using
+        <a href="https://tailwindcss.com/" target="_blank" class="text-pink-700 text-sm hover:underline font-mono">tailwindcss</a> and
+        <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank" class="text-pink-700 text-sm hover:underline font-mono">@tailwindcss/typography</a>.
+    </p>
+    <p>Modify <span class="font-mono text-sm">src/index.liquid</span> to get started.</p>
+</div>
+
+<div class="my-8">
+    <h2 class="text-2xl my-2">Posts</h2>
+    <ul>
+        {% for post in collections.post %}
+        <li class="list-disc ml-4"><a href="{{ post.url }}" class="text-black hover:underline">{{ post.data.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
