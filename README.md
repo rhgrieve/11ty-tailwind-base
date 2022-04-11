@@ -4,7 +4,7 @@
 
 > A simple 11ty base using tailwindcss and @tailwindcss/typography.
 
-### ✨ [Demo](example.com)
+### ✨ [Demo](https://11ty-tailwind-base.vercel.app/)
 
 ## Usage
 
